@@ -1,0 +1,38 @@
+#inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw
+}
+
+#socialmedia {
+}
+
+#socialmedia ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#socialmedia li {
+    margin: 2%;
+    margin-top: 0.5%
+}
+
+.aboutme {
+    margin-left: 2%;
+    font-family: Ubuntu;
+}
+
+i {
+    color: black;
+}
+
+img {
+    border-radius: 4%;
+}
+
