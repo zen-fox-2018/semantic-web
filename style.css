@@ -1,0 +1,51 @@
+/* ==================================================
+  Landing Styling
+================================================== */
+.landing {
+  display: table;
+  position: relative;
+  background-color: rgba(116, 109, 109, 0.884);
+  background-size: cover;
+  padding: 150px 0;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing:after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.landing .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.landing-brand {
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.landing img:hover {
+  opacity: .75;
+  box-shadow: 0 4px 8px 0 rgba(218, 207, 207, 0.687), 0 6px 20px 0 rgba(199, 178, 178, 0.837);
+  filter: grayscale(100%)
+}
+
+.tagline {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin: 15px 0 75px 0;
+  color: #fff;
+}
