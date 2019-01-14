@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ribka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+</head>
+<body>
+
+  <div class="w3-top">
+    <ul class="w3-navbar" id="myNavbar">
+      <li><a href="#" class="w3-padding-large">Back to Top</a></li>
+      <li class="w3-hide-small w3-right">
+        <a href="#portfolio" class="w3-padding-large">Images</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#about" class="w3-padding-large">About</a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-opacity w3-display-container">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Let's <span class="w3-hide-small">travel the world</span></h1>
+    </div>
+  </div>
+  
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h2 class="w3-center">Wanderlust</h2>
+    <p class="w3-center"><em>―Mark Twain―</em></p>
+    <p>“Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.”</p>
+    <!--  Profile Picture and Description  -->
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-section">
+        <img src="data:image/jpeg;base64,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" id="profile" class="w3-circle" alt="Mark Twain">
+      </div>
+  
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-section">
+        <p>American writer, humorist, entrepreneur, publisher, and lecturer.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Parallax Image -->
+  <div class="bgimg-2 w3-display-container" id="portfolio">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-light-grey w3-wide">Wrinkle in Time</span>
+    </div>
+  </div>
+  
+  <!-- Container -->
+  <div class="w3-content w3-container w3-padding-64">
+    <h2 class="w3-center">A Glimpse of the World</h2>
+    <p class="w3-center"><em>Showing a sneak preview of the world out there<br> to satisfy your wanderlust</em></p><br>
+  
+    <!-- Responsive Grid -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="https://unsplash.it/400/300?random" style="width:100%" class="w3-hover-opacity" alt="randompic1">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://unsplash.it/400/301?random" style="width:100%" class="w3-hover-opacity" alt="randompic2">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://unsplash.it/400/302?random" style="width:100%" class="w3-hover-opacity" alt="randompic3">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://unsplash.it/400/303?random" style="width:100%" class="w3-hover-opacity" alt="randompic4">
+      </div>
+    </div>
+  
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="https://unsplash.it/400/304?random" style="width:100%" class="w3-hover-opacity" alt="randompic5">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://unsplash.it/400/305?random" style="width:100%" class="w3-hover-opacity" alt="randompic6">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://unsplash.it/400/306?random" style="width:100%" class="w3-hover-opacity" alt="randompic7">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://unsplash.it/400/307?random" style="width:100%" class="w3-hover-opacity" alt="randompic8">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
